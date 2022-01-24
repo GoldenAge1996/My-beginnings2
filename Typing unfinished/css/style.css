@@ -1,0 +1,41 @@
+body{
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.container{
+    width: 500px;
+    margin: 0;
+}
+
+textarea{
+    width: 100%;
+    display: block;
+    height: 100px;
+    border: 0;
+}
+
+#tags{
+    
+    display: inline-block;
+    margin: 20px 0 0;
+}
+
+.span {
+    display: inline-block;
+    border: 1px solid lightyellow;
+    background-color: lightyellow;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+.tag{
+    display: inline-block;
+    border: 1px solid lightyellow;
+    background-color: lightyellow;
+    border-radius: 5px;
+    padding: 5px 15px;
+}

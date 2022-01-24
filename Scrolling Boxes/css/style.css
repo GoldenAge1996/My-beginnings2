@@ -1,0 +1,45 @@
+
+
+body{
+    background-color: rgb(109, 104, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+h1 {
+color: white;
+    margin: 10px;
+}
+
+.box .we{
+    width: 100px;
+    height: 100px;
+}
+.box{
+    background-size: 100% 100% 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 40px;
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    transform: translateX(200%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even){
+    transform: translateX(-200%);
+}
+
+.box.active{
+    transform: translateX(0);
+}
+

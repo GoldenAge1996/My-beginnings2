@@ -1,0 +1,46 @@
+body{
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.btn{
+    color: rebeccapurple;
+    background-color: white;
+    border: 0;
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.btn:focus{
+    outline: none;
+}
+
+#toasts{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+
+}
+
+.toast{
+    background-color: white;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    border: 0;
+}

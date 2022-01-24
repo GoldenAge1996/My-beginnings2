@@ -1,0 +1,66 @@
+body{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.phone{
+    position: relative;
+    height: 600px;
+    width: 340px;
+    overflow: hidden;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+.content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+object-fit: cover;
+width: 100%;
+height: calc(100% - 60px);
+transition: opacity 0.4s ease-in;
+}
+
+.content.show{
+    opacity: 1;
+}
+
+.red{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    display: inline-block;
+    align-items: center;
+}
+
+nav{
+    background-color: white;
+position: absolute;
+bottom: 0;
+left: 0;
+height: 60px;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    background-color: white;
+    list-style-type: none;
+   
+}
+
+nav ul li{
+    flex: 1;
+    cursor: pointer;
+    
+}
+
+p{
+    margin: 5px 0;
+}

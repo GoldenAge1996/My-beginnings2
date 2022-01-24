@@ -1,0 +1,38 @@
+
+body{
+    background-image: linear-gradient(90deg, purple, rgb(82, 48, 82));
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.search{
+    position: relative;
+   
+}
+.input{
+    border: 0;
+    font-size: 18px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.3s ease;
+}
+.btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 52px;
+    width: 52px;
+    font-size: 36px;
+    transition: transform 0.3s ease;
+}
+
+.search.active .input{
+    width: 300px;
+}
+
+.search.active .btn{
+    transform: translateX(300px);
+}

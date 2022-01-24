@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+button{
+    background-color: purple;
+    color: white;
+    border: 1px solid purple;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px 30px;
+    margin: 20px ;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle{
+    position: absolute;
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.5s ease-out;
+}
+
+@keyframes scale {
+    to{
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}
